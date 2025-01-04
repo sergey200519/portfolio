@@ -1,127 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru" data-width='400px'>
-  <head>
-    <meta charset="utf-8">
-    <title>portfolio.ru</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="img/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Моё портфолио">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header-container">
-        <div class="container header">
-          <h1 class="header__title upper-case">
-            Portfolio<em class='header__title--suffix'>.ru</em>
-          </h1>
-          <input class='u-menu-input' id='u-menu-input' type='checkbox'>
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__list-item">
-                  <a href="#my-skills">Мои умения</a>
-                <li class="navigation__list-item">
-                  <a href="#portfolio">Портфолио</a>
-                <li class="navigation__list-item">
-                  <a href="#about">Обо мне</a>
-              </ul>
-            </nav>
-          <label for='u-menu-input' class="mobile-menu-btn js-mobile-menu-btn">
-          </label>
-        </div>
-      </header>
-      <main class="content-container" id="about">
-        <div class="container content">
-          <section class="about">
-            <img class="about__my-photo" src="img/my_photo_new.jpeg" alt="Моё фото">
-            <div class='about__my-name'>Оборок Сергей</div>
-            <div class='about__my-brith'>Год рождения: 2005г</div>
-          </section>
-          <section class="skills" id="my-skills">
-            <h2 class="section-title upper-case">Какими технологиями я владею</h2>
-            <div class="skills__box">
-              <div class="skills-card">
-                <img class="skills-card__image" src="img/html5.png" alt="логотип HTML5">
-                <h3 class="skills-card__title upper-case">html5 и css3(scss), gulp</h3>
-                <p class="skills-card__text">Я создаю семантическую и адаптивную верстку, при помощи последних разработок в HTML и CSS.</p>
-              </div>
-              <div class="skills-card chess-background">
-                <img class="skills-card__image" src="img/git.png" alt="придумоный мною логотип git">
-                <h3 class="skills-card__title upper-case">git</h3>
-                <p class="skills-card__text">В своей работе мне приходилось работать с репозиториями через систему контроля версий Git.</p>
-              </div>
-              <div class="skills-card">
-                <img class="skills-card__image" src="img/ps.png" alt="логотип photoshop">
-                <h3 class="skills-card__title upper-case">Photoshop, figma</h3>
-                <p class="skills-card__text">Я работаю с самым популярным редактором изображений.</p>
-              </div>
-              <div class="skills-card chess-background">
-                <img class="skills-card__image" src="img/python_white.png" alt="придумоный мною логотип python">
-                <h3 class="skills-card__title upper-case">Python</h3>
-                <p class="skills-card__text">Разрабатываю серверные приложения, создаю скрипты для автоматизации задач и работаю с фреймворками, такими как Django, для создания полноценных веб-приложений.</p>
-              </div>
-              <div class="skills-card">
-                <img class="skills-card__image" src="img/react.png" alt="логотип react">
-                <h3 class="skills-card__title upper-case">React</h3>
-                <p class="skills-card__text">Использую современный JavaScript-фреймворк React для создания динамичных и интерактивных пользовательских интерфейсов, адаптированных под различные устройства.</p>
-              </div> 
-              <div class="skills-card chess-background">
-                <img class="skills-card__image" src="img/dj.png" alt="придумоный мною логотип Django">
-                <h3 class="skills-card__title upper-case">Djangopython</h3>
-                <p class="skills-card__text">Разрабатываю высокопроизводительные серверные приложения и REST API, используя Django, который сочетает в себе простоту разработки и гибкость настройки.</p>
-              </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>portfolio.ru</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Моё портфолио">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header-container">
+      <div class="container header">
+        <h1 class="header__title upper-case">
+          Portfolio<em class='header__title--suffix'>.ru</em>
+        </h1>
+        <input class='u-menu-input' id='u-menu-input' type='checkbox'>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a href="#my-skills">Мои умения</a>
+            <li class="navigation__list-item">
+              <a href="#portfolio">Портфолио</a>
+            <li class="navigation__list-item">
+              <a href="#about">Обо мне</a>
+          </ul>
+        </nav>
+        <label for='u-menu-input' class="mobile-menu-btn js-mobile-menu-btn">
+        </label>
+      </div>
+    </header>
+    <main class="content-container" id="about">
+      <div class="container content">
+        <section class="about">
+          <img class="about__my-photo" src="img/my_photo_new.jpeg" alt="Моё фото">
+          <div class='about__my-name'>Оборок Сергей</div>
+          <div class='about__my-brith'>Год рождения: 2005г</div>
+        </section>
+        <section class="skills" id="my-skills">
+          <h2 class="section-title upper-case">Какими технологиями я владею</h2>
+          <div class="skills__box">
+            <div class="skills-card">
+              <img class="skills-card__image" src="img/html5.png" alt="логотип HTML5">
+              <h3 class="skills-card__title upper-case">html5 и css3(scss), gulp</h3>
+              <p class="skills-card__text">Я создаю семантическую и адаптивную верстку, при помощи последних разработок
+                в HTML и CSS.</p>
             </div>
-          </section>
-          <section class="strengths">
-            <h2 class="section-title upper-case">Мои сильные стороны</h2>
-            <div class="strengths__box">
-              <div class="strengths__card chess-background">
-                <h3 class="strengths-card__title upper-case">Быстро обучаюсь</h3>
-                <p class="strengths-card__text">Очень быстро вхожу в курс дел, легко обучаюсь новым технологиям, всегда рад изучить что-то новое, полезное.</p>
-              </div>
-              <div class="strengths__card">
-                <h3 class="strengths-card__title upper-case">Новые технологии</h3>
-                <p class="strengths-card__text">Я учую неовейшые технологии и пользуюсь ими при создании сайта</p>
-              </div>
-              <div class="strengths__card chess-background">
-                <h3 class="strengths-card__title upper-case">Инициативный</h3>
-                <p class="strengths-card__text">Я инициативный человек, у которого как правило несколько решений одних и тех же задач.</p>
-              </div>
+            <div class="skills-card chess-background">
+              <img class="skills-card__image" src="img/git.png" alt="придумоный мною логотип git">
+              <h3 class="skills-card__title upper-case">git</h3>
+              <p class="skills-card__text">В своей работе мне приходилось работать с репозиториями через систему
+                контроля версий Git.</p>
             </div>
-          </section>
-          <section class="portfolio" id="portfolio">
-            <h2 class="section-title upper-case">Мои последние работы из портфолио</h2>
-            <div class="portfolio__box">
-             <a class='portfolio__item' href="четыри праила вёрстки/index.html"><img class='portfolio__item-preview' src="img/pravila.png" alt=""></a>
-             <a class='portfolio__item' href="theater/index.html"><img class='portfolio__item-preview' src="img/dk_gag.png" alt=""></a>
-             <a class='portfolio__item' href="https://sergey200519.github.io/work_bild/"><img class='portfolio__item-preview' src="img/bild.png" alt=""></a>
+            <div class="skills-card">
+              <img class="skills-card__image" src="img/ps.png" alt="логотип photoshop">
+              <h3 class="skills-card__title upper-case">Photoshop, figma</h3>
+              <p class="skills-card__text">Я работаю с самым популярным редактором изображений.</p>
             </div>
-          </section>
-          <section class="demos">
-            <h2 class="section-title upper-case">Мои demo</h2>
-            <div class="demos__box">
-              <a class="demos__item" href="pages/gradient.html"><img class="demos__item-preview" src="img/flag.png" alt=""><p class="demos__item-signature">Демонстрация linear-gradient</p></a>
-              <a class="demos__item" href="pages/animation.html"><img class="demos__item-preview" src="img/anim.png" alt=""><p class="demos__item-signature">Демонстрация псевдо графики в css и последующее анимерование</p></a>
-              <a class="demos__item" href="pages/flexbox.html"><img class="demos__item-preview" src="img/flexbox.png" alt=""><p class="demos__item-signature">Демонстрация возможностей flexbox</p></a>
+            <div class="skills-card chess-background">
+              <img class="skills-card__image" src="img/python_white.png" alt="придумоный мною логотип python">
+              <h3 class="skills-card__title upper-case">Python</h3>
+              <p class="skills-card__text">Разрабатываю серверные приложения, создаю скрипты для автоматизации задач и
+                работаю с фреймворками, такими как Django, для создания полноценных веб-приложений.</p>
             </div>
-          </section>
-        </div>
-      </main>
-      <footer class='footer-container'>
-        <div class="container footer">
-          <div class="footer__logo upper-case">Portfolio.ru</div>
-          <div class="contacts-footer">
-            <div class="contacts-footer__title upper-case">Контакты</div>
-            <ul class="contact-list">
-              <li class="contact-list__item">oborok05@bk.ru</li>
-              <li class="contact-list__item">8(967) 147-80-10</li>
-            </ul>
+            <div class="skills-card">
+              <img class="skills-card__image" src="img/react.png" alt="логотип react">
+              <h3 class="skills-card__title upper-case">React</h3>
+              <p class="skills-card__text">Использую современный JavaScript-фреймворк React для создания динамичных и
+                интерактивных пользовательских интерфейсов, адаптированных под различные устройства.</p>
+            </div>
+            <div class="skills-card chess-background">
+              <img class="skills-card__image" src="img/dj.png" alt="придумоный мною логотип Django">
+              <h3 class="skills-card__title upper-case">Djangopython</h3>
+              <p class="skills-card__text">Разрабатываю высокопроизводительные серверные приложения и REST API,
+                используя Django, который сочетает в себе простоту разработки и гибкость настройки.</p>
+            </div>
           </div>
+        </section>
+        <section class="strengths">
+          <h2 class="section-title upper-case">Мои сильные стороны</h2>
+          <div class="strengths__box">
+            <div class="strengths__card chess-background">
+              <h3 class="strengths-card__title upper-case">Быстро обучаюсь</h3>
+              <p class="strengths-card__text">Очень быстро вхожу в курс дел, легко обучаюсь новым технологиям, всегда
+                рад изучить что-то новое, полезное.</p>
+            </div>
+            <div class="strengths__card">
+              <h3 class="strengths-card__title upper-case">Новые технологии</h3>
+              <p class="strengths-card__text">Я учую неовейшые технологии и пользуюсь ими при создании сайта</p>
+            </div>
+            <div class="strengths__card chess-background">
+              <h3 class="strengths-card__title upper-case">Инициативный</h3>
+              <p class="strengths-card__text">Я инициативный человек, у которого как правило несколько решений одних и
+                тех же задач.</p>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+          <h2 class="section-title upper-case">Мои последние работы из портфолио</h2>
+          <div class="portfolio__box">
+            <a class='portfolio__item' href="четыри праила вёрстки/index.html"><img class='portfolio__item-preview'
+                src="img/pravila.png" alt=""></a>
+            <a class='portfolio__item' href="theater/index.html"><img class='portfolio__item-preview'
+                src="img/dk_gag.png" alt=""></a>
+            <a class='portfolio__item' href="https://sergey200519.github.io/work_bild/"><img
+                class='portfolio__item-preview' src="img/bild.png" alt=""></a>
+          </div>
+        </section>
+        <section class="demos">
+          <h2 class="section-title upper-case">Мои demo и проекты в разработке</h2>
+          <div class="demos__box">
+            <a class="demos__item" href="pages/gradient.html">
+              <img class="demos__item-preview" src="img/flag.png" alt="">
+              <p class="demos__item-signature">Демонстрация linear-gradient</p>
+            </a>
+            <a class="demos__item" href="pages/animation.html">
+              <img class="demos__item-preview" src="img/anim.png" alt="">
+              <p class="demos__item-signature">Демонстрация псевдо графики в css и последующее анимерование</p>
+            </a>
+            <a class="demos__item" href="pages/flexbox.html">
+              <img class="demos__item-preview" src="img/flexbox.png" alt="">
+              <p class="demos__item-signature">Демонстрация возможностей flexbox</p>
+            </a>
+            <a class="demos__item" href="https://sergey200519.github.io/my-code-Editor/">
+              <img class="demos__item-preview" src="img/code_edit.png" alt="">
+              <p class="demos__item-signature">Редактор кода онлайн</p>
+            </a>
+            <a class="demos__item" href="https://sergey200519.github.io/pyAlice-documentation/pages/documentation.html">
+              <img class="demos__item-preview" src="img/py_alice.png" alt="">
+              <p class="demos__item-signature">pyAlice - фреймворк для упрощения разработки диалогов для Яндекс.Алисой</p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class='footer-container'>
+      <div class="container footer">
+        <div class="footer__logo upper-case">Portfolio.ru</div>
+        <div class="contacts-footer">
+          <div class="contacts-footer__title upper-case">Контакты</div>
+          <ul class="contact-list">
+            <li class="contact-list__item">oborok05@bk.ru</li>
+            <li class="contact-list__item">8(967) 147-80-10</li>
+          </ul>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
