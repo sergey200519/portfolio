@@ -7,270 +7,9 @@
     <link rel="shortcut icon" href="img/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style>
-      /* css reset */
-      *,
-      *::before,
-      *::after  {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      a {
-        text-decoration: none;
-      }
-      li {
-        list-style-type: none;
-      }
-      input,
-      button,
-      textarea,
-      select {
-        font: inherit;
-      }
-
-      /* general styling - -посояные правила*/
-
-      body {
-        font-family: 'Roboto', sans-serif;
-      }
-      a {
-        color: inherit;
-      }
-      .container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 5px;
-      }
-      .section-title {
-        margin: 35px 0 25px 0;
-        text-align: center;
-      }
-      .upper-case {
-        text-transform: uppercase;
-      }
-
-      /* header */
-      .header-container {
-        background: rgba(0, 0, 0, .8);
-        color: white;
-        position: sticky;
-        top: 0;
-      }
-      @keyframes show-element {
-        0% {
-          opacity: 0;
-          top: -70px;
-        }
-        100% {
-          opacity: 1;
-          top: 0;
-        }
-      }
-      .header {
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px 5px;
-      }
-      .header__title--suffix {
-        color: #03b0ff;
-        font-style: normal;
-      }
-      .navigation__list {
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        justify-content: space-between;
-      }
-      .navigation__list-item {
-        margin-right: 10px;
-        font-size: 18px;
-      }
-      .mobile-menu-btn {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        display: none;
-        width: 21px;
-        height: 21px;
-        border: 0;
-        color: silver;
-        background:
-          linear-gradient(currentcolor, currentcolor) top center / 100% 3px no-repeat,
-          linear-gradient(currentcolor, currentcolor) center center / 100% 3px no-repeat,
-          linear-gradient(currentcolor, currentcolor) bottom center / 100% 3px no-repeat;
-      }
-      .mobile-menu-btn:hover,
-      .mobile-menu-btn:focus {
-        color: white;
-        background:
-          linear-gradient(currentcolor, currentcolor) top center / 100% 3px no-repeat,
-          linear-gradient(currentcolor, currentcolor) center center / 100% 3px no-repeat,
-          linear-gradient(currentcolor, currentcolor) bottom center / 100% 3px no-repeat;
-        cursor: pointer;
-      }
-
-      /* content */
-      .about {
-        padding-top: 25px;
-      }
-      .about__my-photo {
-        margin: 0 auto;
-        display: block;
-        width: 250px;
-      }
-      .about__my-brith,
-      .about__my-name {
-        text-align: center;
-      }
-      .skills__box {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-      }
-      .skills-card {
-        padding: 15px 5px;
-      }
-      .chess-background {
-        background: #03b0ff;
-        color: white;
-      }
-      .skills-card__image {
-        width: 100px;
-        height: 100px;
-        display: block;
-        margin: 0 auto 15px auto;
-      }
-      .strengths__box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        text-align: center;
-      }
-      .strengths__card {
-        padding: 15px 5px;
-      }
-      .portfolio__box {
-        margin-top: 25px;
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        justify-content: space-between;
-      }
-      .portfolio__item {
-        width: 45%;
-      }
-      .portfolio__item-preview {
-        width: 100%;
-        height: auto;
-      }
-      .demos__box {
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        justify-content: space-between;
-      }
-      .demos__item {
-        width: 30%;
-      }
-      .demos__item-preview {
-        width: 100%;
-        height: 100%;
-        outline: 1px solid rgba(192, 192, 192, .5);
-      }
-      .demos__item-signature {
-        text-align: center;
-      }
-
-      /* footer */
-      .footer-container {
-        padding: 10px 0;
-        margin-top: 60px;
-        background: rgba(0, 0, 0, .8);
-        color: white;
-      }
-      .footer {
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        justify-content: space-between;
-      }
-      .contacts-footer {
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-      }
-
-      /* media */
-      @media (max-width: 575px) {
-        .header {
-          -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-          flex-direction: column;
-        }
-        .mobile-menu-btn {
-          display: block;
-        }
-        .navigation__list {
-          -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          margin-top: 6px;
-        }
-        .navigation__list-item {
-          margin: 0 auto;
-          margin-bottom: 5px;
-          text-align: center;
-        }
-        .skills__box {
-          grid-template-columns: 1fr;
-        }
-        .strengths__box {
-          grid-template-columns: 1fr;
-        }
-        .strengths__card,
-        .skills-card {
-          padding: 10px 40px;
-         }
-        .portfolio__box {
-          display: block;
-        }
-        .portfolio__item {
-          width: 80%;
-          margin: 0 auto;
-        }
-        .demos__box {
-          -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-          flex-direction: column;
-        }
-        .demos__item {
-          width: 80%;
-          margin: 0 auto;
-        }
-      }
-      @media (max-width: 400px) {
-        .strengths__card,
-        .skills-card {
-          padding: 10px 45px;
-          width: 100%;
-        }
-        .portfolio__item {
-          width: 100%;
-        }
-        .demos__item {
-          width: 100%;
-        }
-      }
-    </style>
+    <meta name="description" content="Моё портфолио">
   </head>
   <body>
     <div class="wrapper">
@@ -279,23 +18,6 @@
           <h1 class="header__title upper-case">
             Portfolio<em class='header__title--suffix'>.ru</em>
           </h1>
-            <style>
-              @media (max-width: 575px) {
-                .u-menu-input + .navigation {
-                  display: none;
-                }
-                .u-menu-input {
-                  display: block;
-                  transition: 1s;
-                }
-              }
-                .u-menu-input {
-                  display: none;
-                }
-              .u-menu-input:checked + .navigation {
-                display: block;
-              }
-            </style>
           <input class='u-menu-input' id='u-menu-input' type='checkbox'>
             <nav class="navigation">
               <ul class="navigation__list">
@@ -336,6 +58,21 @@
                 <h3 class="skills-card__title upper-case">Photoshop, figma</h3>
                 <p class="skills-card__text">Я работаю с самым популярным редактором изображений.</p>
               </div>
+              <div class="skills-card chess-background">
+                <img class="skills-card__image" src="img/python_white.png" alt="придумоный мною логотип python">
+                <h3 class="skills-card__title upper-case">Python</h3>
+                <p class="skills-card__text">Разрабатываю серверные приложения, создаю скрипты для автоматизации задач и работаю с фреймворками, такими как Django, для создания полноценных веб-приложений.</p>
+              </div>
+              <div class="skills-card">
+                <img class="skills-card__image" src="img/react.png" alt="логотип react">
+                <h3 class="skills-card__title upper-case">React</h3>
+                <p class="skills-card__text">Использую современный JavaScript-фреймворк React для создания динамичных и интерактивных пользовательских интерфейсов, адаптированных под различные устройства.</p>
+              </div> 
+              <div class="skills-card chess-background">
+                <img class="skills-card__image" src="img/dj.png" alt="придумоный мною логотип Django">
+                <h3 class="skills-card__title upper-case">Djangopython</h3>
+                <p class="skills-card__text">Разрабатываю высокопроизводительные серверные приложения и REST API, используя Django, который сочетает в себе простоту разработки и гибкость настройки.</p>
+              </div>
             </div>
           </section>
           <section class="strengths">
@@ -360,6 +97,7 @@
             <div class="portfolio__box">
              <a class='portfolio__item' href="четыри праила вёрстки/index.html"><img class='portfolio__item-preview' src="img/pravila.png" alt=""></a>
              <a class='portfolio__item' href="theater/index.html"><img class='portfolio__item-preview' src="img/dk_gag.png" alt=""></a>
+             <a class='portfolio__item' href="thttps://sergey200519.github.io/work_bild/"><img class='portfolio__item-preview' src="img/bild.png" alt=""></a>
             </div>
           </section>
           <section class="demos">
